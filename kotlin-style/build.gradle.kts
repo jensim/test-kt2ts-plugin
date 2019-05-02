@@ -13,3 +13,14 @@ plugins {
 kt2ts {
     packs = arrayOf("org.fidget.models")
 }
+
+tasks.findByName("kt2ts")?.apply {
+    doLast {
+        val filecontent = File("${project.buildDir}/kt2ts/kt2ts.txt").readText()
+        if(filecontent.isNullOrEmpty()){
+            throw RuntimeException("No file content produced")
+        }else{
+            println("All okay! '$filecontent'")
+        }
+    }
+}
