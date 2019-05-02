@@ -1,3 +1,3 @@
 package se.jensim.models
 
-class Ghjk
+data class Ghjk(val g:String)

@@ -1,3 +1,3 @@
 package se.jensim.models
 
-class Asdf
+data class Asdf(val a:String)
