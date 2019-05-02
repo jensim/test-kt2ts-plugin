@@ -11,7 +11,7 @@ plugins {
 }
 
 kt2ts {
-    packs = arrayOf("org.fidget.models")
+    packs = arrayOf("se.jensim.models")
 }
 
 tasks.findByName("kt2ts")?.apply {

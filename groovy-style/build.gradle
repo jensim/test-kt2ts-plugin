@@ -12,5 +12,5 @@ plugins {
 }
 
 kt2ts {
-    packs = ["org.fidget.models"]
+    packs = ["se.jensim.models"]
 }
